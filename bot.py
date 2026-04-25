@@ -145,10 +145,6 @@ async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("♻️ دریافت مجدد فیلم", callback_data=f"check:{video_code}")]
         ])
     )
-        await query.message.reply_text(
-            "❌ ته لا ټولو چینلونو ته Join نه یې. اول Join کړه، بیا Check ووهه."
-        )
-
 
 async def save_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global VIDEO_COUNTER
