@@ -19,7 +19,7 @@ CHANNELS = [
     ("https://t.me/jdjejdbsk"),
 ]
 
-VIDEO_FILE_ID = "YOUR_VIDEO_FILE_ID"
+VIDEO_FILE_ID = "BAACAgUAAxkBAAMGaeyH6bjnMH6AHe7DIXWh5XqPiWkAAqgdAAKac2BX8dM4C-oS4z47BA"
 
 
 class Handler(BaseHTTPRequestHandler):
