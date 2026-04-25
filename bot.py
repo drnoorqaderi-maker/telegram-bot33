@@ -145,28 +145,6 @@ async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("♻️ دریافت مجدد فیلم", callback_data=f"check:{video_code}")]
         ])
     )
-
-        await query.message.reply_text("✅ ویډیو خلاصه شوه. 60 ثانیې وروسته به حذف شي.")
-
-        await asyncio.sleep(60)
-
-try:
-    await context.bot.delete_message(
-        chat_id=user_id,
-        message_id=sent.message_id
-    )
-except Exception:
-    pass
-
-await context.bot.send_message(
-    chat_id=user_id,
-    text="♻️  بیا همدا فلم غوښتل",
-    reply_markup=InlineKeyboardMarkup([
-        [InlineKeyboardButton("♻️ دریافت مجدد فیلم", callback_data=f"check:{video_code}")]
-    ])
-)
-
-    else:
         await query.message.reply_text(
             "❌ ته لا ټولو چینلونو ته Join نه یې. اول Join کړه، بیا Check ووهه."
         )
