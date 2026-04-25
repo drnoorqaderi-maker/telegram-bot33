@@ -1,3 +1,9 @@
+from telegram.ext import MessageHandler, filters
+
+async def get_video_id(update, context):
+    await update.message.reply_text(update.message.video.file_id)
+
+app.add_handler(MessageHandler(filters.VIDEO, get_video_id))
 import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
